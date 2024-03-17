@@ -138,3 +138,55 @@
   console.markTimeline("Event occurred");
   ```
 - **Explanation:** Marks the timeline with the specified label, which can be useful for tracking events and performance analysis.
+
+## `console.timeLog()`
+- **Example:**
+  ```javascript
+  console.time("Timer");
+  // Code to measure execution time
+  console.timeLog("Timer", "Intermediate log");
+  // More code
+  console.timeEnd("Timer");
+  ```
+- **Explanation:** Logs intermediate messages with a timestamp during the execution of a timer set by `console.time()`.
+
+## `console.memory`
+- **Example:**
+  ```javascript
+  console.log(console.memory);
+  ```
+- **Explanation:** Provides information about the memory usage of the page, including `jsHeapSizeLimit`, `usedJSHeapSize`, and `totalJSHeapSize`.
+
+## `console.global`
+- **Example:**
+  ```javascript
+  console.log(console.global);
+  ```
+- **Explanation:** Outputs the global object, which is `window` in web browsers and `global` in Node.js environments.
+
+## `console.exception()`
+- **Example:**
+  ```javascript
+  try {
+    throw new Error("Custom error");
+  } catch (error) {
+    console.exception(error);
+  }
+  ```
+- **Explanation:** Logs an exception object to the console, providing detailed information about the error, including the stack trace.
+
+## `console.memory.profile() / console.memory.profileEnd()`
+- **Example:**
+  ```javascript
+  console.memory.profile("MemoryProfile");
+  // Code to profile memory usage
+  console.memory.profileEnd("MemoryProfile");
+  ```
+- **Explanation:** Initiates and stops the memory profiler under the label provided, allowing developers to analyze memory usage.
+
+## `console.memory.timeline()`
+- **Example:**
+  ```javascript
+  console.memory.timeline("MemoryEvent");
+  ```
+- **Explanation:** Marks the timeline with the specified label, capturing memory information at that point, useful for memory profiling.
