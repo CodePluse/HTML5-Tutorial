@@ -69,3 +69,50 @@ The `<form>` tag in HTML is used to create a form for user input. It contains va
 - **Multiple:** Allows the user to select multiple files for upload.
 
 These are some of the most commonly used attributes of the `<form>` tag in HTML. Experimenting with these attributes will give you a better understanding of how forms work in web development.
+
+# Uncommon HTML Form Tag Attributes
+
+While most developers primarily use common attributes of the `<form>` tag, there are some lesser-known attributes that can be useful in certain situations. Below are some uncommon attributes along with their explanations:
+
+## formaction
+
+- **Description:** Specifies the URL where the form data should be submitted, overriding the `action` attribute of the `<form>` tag.
+- **Example:** `<input type="submit" value="Submit" formaction="/submit_form_alt.php">`
+
+## formmethod
+
+- **Description:** Defines the HTTP method used when submitting the form, overriding the `method` attribute of the `<form>` tag.
+- **Values:** `get` or `post`.
+- **Example:** `<input type="submit" value="Submit" formmethod="get">`
+
+## formenctype
+
+- **Description:** Defines how the form data should be encoded before submitting it to the server, overriding the `enctype` attribute of the `<form>` tag.
+- **Values:** `application/x-www-form-urlencoded`, `multipart/form-data`, or `text/plain`.
+- **Example:** `<input type="submit" value="Submit" formenctype="multipart/form-data">`
+
+## formtarget
+
+- **Description:** Specifies where to display the response received after submitting the form, overriding the `target` attribute of the `<form>` tag.
+- **Values:** `_self`, `_blank`, `_parent`, `_top`, or custom frame/window name.
+- **Example:** `<input type="submit" value="Submit" formtarget="_blank">`
+
+## formnovalidate
+
+- **Description:** Prevents the browser from validating the form before submitting, overriding the `novalidate` attribute of the `<form>` tag.
+- **Example:** `<input type="submit" value="Submit" formnovalidate>`
+
+## form
+
+- **Description:** Associates an input field with a specific `<form>` element, even if it's not directly nested within that form.
+- **Example:** `<input type="text" name="username" form="user_form">`
+
+## Other Less Commonly Used Attributes
+
+- **formmethod:** Specifies the HTTP method (GET or POST) to use when submitting the form. 
+- **formenctype:** Specifies the encoding type of the form data when submitting it to the server.
+- **formtarget:** Specifies where to display the response that is received after submitting the form.
+- **formnovalidate:** Prevents the browser from validating the form before submitting it.
+- **form:** Associates an input field with a specific form, even if it's not directly nested within that form.
+
+These less commonly used attributes provide additional flexibility and control over form behavior in HTML.
