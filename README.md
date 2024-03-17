@@ -342,10 +342,11 @@ HTML provides different types of lists, each with its own style. You can create 
   `input`
 - `<input>` Represents an input field within a form.
 - `type` Specifies the type of the input field (e.g., `text`, `password`).
-- [Here is some Common & Less Common or Specialized HTML Input Types](input_type.md)
+- Here is some Common & Less Common or Specialized HTML Input Types
+  [Click me](input_type.md)
 - `id` and `name` Identifiers for form elements, often used in scripting.
 - `required` Specifies that the input must be filled out before submitting the form.
-- [See more](input_tag_property.md)
+- [See more input tag property](input_tag_property.md)
 - `<input>` Represents an input field within a form.
 
 ## Meta Tags
